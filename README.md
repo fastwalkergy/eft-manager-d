@@ -12,7 +12,7 @@ EFT-MANAGER-D 是一个用于管理与优化 EFT（Escape from Tarkov）游戏�
 #### 安装教程
 
 1. 下载项目源码并解压。
-2. 安装所需的运行环境（如 .NET 或其他依赖库）。
+2. 安装所需的运行环境（[.Net10 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/10.0)）。
 3. 运行安装脚本或手动配置相关参数。
 
 #### 使用说明
@@ -23,16 +23,4 @@ EFT-MANAGER-D 是一个用于管理与优化 EFT（Escape from Tarkov）游戏�
 
 #### 参与贡献
 
-1. Fork 本仓库。
-2. 新建 Feat_xxx 分支。
-3. 提交代码并进行测试。
-4. 新建 Pull Request 并等待审核。
-
-#### 特技
-
-1. 使用 `Readme_XXX.md` 来支持不同的语言，例如 `Readme_en.md` 和 `Readme_zh.md`。
-2. Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)。
-3. 你可以通过 [https://gitee.com/explore](https://gitee.com/explore) 了解 Gitee 上的优秀开源项目。
-4. [GVP](https://gitee.com/gvp) 是 Gitee 最有价值开源项目，综合评定出的优秀开源项目。
-5. Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)。
-6. Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)。
+1. 提交 issues 反馈问题
