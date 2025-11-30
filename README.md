@@ -11,7 +11,7 @@ EFT-MANAGER-D 是一个用于管理与优化 EFT（Escape from Tarkov）游戏�
 
 #### 安装教程
 
-1. 下载项目源码并解压。
+1. 下载项目压缩包并解压。
 2. 安装所需的运行环境（[.Net10 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/10.0)）。
 3. 运行安装脚本或手动配置相关参数。
 
