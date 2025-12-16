@@ -1,0 +1,58 @@
+[ 
+  {
+    "name": "EFTTools",
+    "version": "NA",
+    "description": "一个用来查看EFT服务端数据的工具。",
+    "tag": "Serialization",
+    "url": "https://github.com/DaemonWalker/EFTTools",
+    "license": "MIT"
+  },
+  {
+    "name": "WPF UI",
+    "version": "4.0.2",
+    "description": "基于 Fluent Design 的 WPF 现代 UI 库，提供了直观的设计和丰富的控件。",
+    "tag": "UI Framework",
+    "url": "https://wpfui.lepo.co/",
+    "license": "MIT"
+  },
+  {
+    "name": "CommunityToolkit.Mvvm",
+    "version": "8.4.0",
+    "description": "现代、快速且模块化的 MVVM 库，它是 .NET 社区工具包的一部分。",
+    "tag": "MVVM",
+    "url": "https://github.com/CommunityToolkit/dotnet",
+    "license": "MIT"
+  },
+  {
+    "name": "Microsoft.Extensions.Hosting",
+    "version": "9.0.1",
+    "description": "为 .NET 应用程序提供依赖注入、配置、日志记录等基础服务的主机抽象。",
+    "tag": "Core",
+    "url": "https://learn.microsoft.com/zh-cn/dotnet/core/extensions/generic-host",
+    "license": "MIT"
+  },
+  {
+    "name": "Newtonsoft.Json",
+    "version": "13.0.4",
+    "description": "也就是 Json.NET。.NET 生态系统中非常流行的高性能 JSON 框架。",
+    "tag": "Serialization",
+    "url": "https://www.newtonsoft.com/json",
+    "license": "MIT"
+  },
+  {
+    "name": "YamlDotNet",
+    "version": "16.3.0",
+    "description": "用于 .NET 的 YAML 序列化和反序列化库。",
+    "tag": "Serialization",
+    "url": "https://github.com/aaubry/YamlDotNet",
+    "license": "MIT"
+  },
+  {
+    "name": "Windows API Code Pack",
+    "version": "1.1.5",
+    "description": "提供对 Windows 操作系统特定功能（如 Shell、DirectX 等）的访问封装。",
+    "tag": "System",
+    "url": "https://github.com/aybe/Windows-API-Code-Pack-1.1",
+    "license": "Custom/MIT"
+  }
+]
