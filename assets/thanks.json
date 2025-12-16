@@ -6,6 +6,13 @@
     "tag": "Serialization",
     "url": "https://github.com/DaemonWalker/EFTTools",
     "license": "MIT"
+  }, {
+    "name": "Windows API Code Pack",
+    "version": "2.10.2",
+    "description": "由 Element 团队开发的 Vue.js 3 UI 库。",
+    "tag": "UI Framework",
+    "url": "https://github.com/element-plus/element-plus",
+    "license": "MIT"
   },
   {
     "name": "WPF UI",
