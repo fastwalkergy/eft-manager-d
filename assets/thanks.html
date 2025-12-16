@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>开源致谢 - Open Source Acknowledgement</title>
+  <!-- 引入重构后的 CSS -->
+  <link rel="stylesheet" href="./Assets/css/index.css" />
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="logo"><span>Open Source</span> Acknowledgement</div>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="#" style="color: var(--primary)">开源致谢</a>
+    </nav>
+  </header>
+
+  <!-- 主容器 -->
+  <div class="container">
+    <div class="page-header">
+      <h1>开源致谢</h1>
+      <p>本项目离不开这些优秀的开源项目支持（排名不分前后）</p>
+    </div>
+
+    <!-- 列表容器，JS将内容插入这里 -->
+    <div id="thanks-list" class="tools-section">
+      <!-- 加载中提示 -->
+      <div style="text-align: center; padding: 20px">
+        <span style="color: var(--primary)">正在加载数据...</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Tactical UI Design. All rights reserved.</footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const listContainer = document.getElementById("thanks-list");
+
+      // 获取本地 JSON 数据
+      fetch("Assets/thanks.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          listContainer.innerHTML = "";
+
+          data.forEach((item) => {
+            // 自动根据标签分配颜色
+            let tagClass = "tag-blue"; // 默认蓝色
+            if (["UI Framework", "MVVM"].includes(item.tag))
+              tagClass = "tag-green"; // 核心框架用绿色
+            if (["Serialization", "System", "Core"].includes(item.tag))
+              tagClass = "tag-yellow"; // 工具类和核心组件用黄色
+
+            const cardHTML = `
+                    <div class="function-card">
+                        <div style="flex: 1;">
+                            <h3>
+                                ${item.name}
+                                <!-- 显示版本号 -->
+                                <span style="font-size: 14px; color: var(--version-color); font-family: monospace; margin-left: 5px;">
+                                    v${item.version}
+                                </span>
+                                <span class="tag ${tagClass}" style="margin-left: 10px;">${item.tag}</span>
+                            </h3>
+                            <p class="card-desc">${item.description}</p>
+                            <div style="margin-top:12px; font-size:12px; color:#6b7280; font-family:monospace; display:flex; gap:15px;">
+                                <span>⚖️ ${item.license}</span>
+                            </div>
+                        </div>
+                        <a href="${item.url}" target="_blank" class="action-btn">查看</a>
+                    </div>
+                     `;
+
+            listContainer.insertAdjacentHTML("beforeend", cardHTML);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading json:", error);
+          listContainer.innerHTML = `
+                        <div style="text-align:center; color: #ef4444; border:1px solid #ef4444; padding:20px; border-radius:8px;">
+                            <h3>数据加载失败</h3>
+                            <p>请确保 <code style="background:#333; padding:2px 5px;">thanks.json</code> 文件存在且无需跨域访问。</p>
+                        </div>
+                    `;
+        });
+    });
+  </script>
+</body>
+
+</html>
