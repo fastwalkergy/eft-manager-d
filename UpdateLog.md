@@ -1,3 +1,5 @@
+v3.4.5.30 - 修复程序已知问题
+
 v3.3.3.28 - [修复已知问题，优化程序](https://gitee.com/x-nai/eft-manager-d/releases/tag/v3.3.3.28)
 
 v3.1.3.24 -  **使用json保存配置；移除Uploader更新程序，改为自更新；修复调用SPT.Server.dll扫描mod导致mod被锁定无法移动的问题；优化性能【重要更新】【重大更新】** 
