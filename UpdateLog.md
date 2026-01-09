@@ -1,3 +1,5 @@
+v3.4.6.31 - [修复已知问题，优化程序](https://gitee.com/x-nai/eft-manager-d/releases/tag/v3.4.6.31)
+
 v3.4.5.30 - 修复程序已知问题
 
 v3.3.3.28 - [修复已知问题，优化程序](https://gitee.com/x-nai/eft-manager-d/releases/tag/v3.3.3.28)
