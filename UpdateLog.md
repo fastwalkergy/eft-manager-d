@@ -1,3 +1,5 @@
+v3.4.8.33 - 修复mod扫描报错的错误
+
 v3.4.7.32 - 修复无法启动游戏的错误
 
 v3.4.6.31 - [修复已知问题，优化程序](https://gitee.com/x-nai/eft-manager-d/releases/tag/v3.4.6.31)
