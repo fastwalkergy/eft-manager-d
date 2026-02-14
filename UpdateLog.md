@@ -1,3 +1,5 @@
+v3.5.0.35 - 修复已知问题
+
 v3.5.0.35 - [修复问题，重构界面](https://gitee.com/x-nai/eft-manager-d/releases/tag/v3.5.0.35)
 
 v3.4.8.33 - 修复mod扫描报错的错误
